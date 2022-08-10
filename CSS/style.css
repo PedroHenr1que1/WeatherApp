@@ -22,8 +22,6 @@
 }
 
 body {
-    width: 100%;
-    height: 100%;
     background-color: #343642;
 }
 
@@ -49,21 +47,21 @@ footer {
     margin: 10px;
     font-size: 10vw;
     text-shadow: 
-    -1px 1px 0 #014296,
-    -2px 2px 0 #014296,
-    -3px 3px 0 #014296,
-    -4px 4px 0 #014296,
-    -5px 5px 0 #014296,
-    -6px 6px 0 #014296,
-    -7px 7px 0 #014296;
+    -0.2vw 0.01vw 0 #014296,
+    -0.2vw 0.02vw 0 #014296,
+    -0.2vw 0.03vw 0 #014296,
+    -0.2vw 0.04vw 0 #014296,
+    -0.2vw 0.05vw 0 #014296,
+    -0.2vw 0.06vw 0 #014296,
+    -0.2vw 0.07vw 0 #014296;
 }
 
 .subtitle {
     font-size: 4vw;
     text-shadow: 
-    -1px 1px 0 #014296,
-    -2px 2px 0 #014296,
-    -3px 3px 0 #014296;
+    -0.2vw 0.01vw 0 #014296,
+    -0.2vw 0.02vw 0 #014296,
+    -0.2vw 0.03vw 0 #014296;
 }
 
 .form{
@@ -85,6 +83,7 @@ footer {
 }
 
 .button {
+    color: #343642;
     width: 50%;
     font-size: 2.5vw;
     border-radius: 10px;
