@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+
+    <!-- Arquivo JavaScript -->
+    <script defer src="./JavaScript/script.js"></script>
+    <title>WeatherApp</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Weather App</h1>
+        <h2 class="subtitle">A simple way to see the weather</h2>
+    </header>
+    <main>
+        <form class="form">
+            <input
+                type="search"
+                class="input__search"
+                placeholder="Search city..."
+            />
+            <button class="button" type="submit">SUBMIT</button>
+        </form>
+        <div class="card">
+            <div class="card__content01">
+                <h3 class="city"></h3>
+                <h2 class="country"></h2>
+            </div>
+            <div class="card__content02">
+                <h3 class="Weather__Main"></h3>
+                <h2 class="Weather__Description"></h2>
+            </div>
+
+            <h2 class="temperatures"></h2>
+            <h2 class="feels__like"></h2>
+            <h2 class="temp__min"></h2>
+            <h2 class="temp__max"></h2>
+            <h2 class="humidity"></h2>
+            <h2 class="wind__speed"></h2>
+        </div>
+    </main>
+</body>
+</html>

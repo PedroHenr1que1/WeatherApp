@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    color: #348899;
+    font-family: "Weather";
+}
+
+@font-face {
+    font-family: 'Weather';
+    src: url('../Fonts/novamono.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WeatherLight';
+    src: url('../Fonts/big_noodle_titling.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #343642;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2%;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    justify-content: center; 
+}
+
+.title {
+    margin: 10px;
+    font-size: 10rem;
+    text-shadow: 
+    -1px 1px 0 #014296,
+    -2px 2px 0 #014296,
+    -3px 3px 0 #014296,
+    -4px 4px 0 #014296,
+    -5px 5px 0 #014296,
+    -6px 6px 0 #014296,
+    -7px 7px 0 #014296;
+}
+
+.subtitle {
+    font-size: 3rem;
+    text-shadow: 
+    -1px 1px 0 #014296,
+    -2px 2px 0 #014296,
+    -3px 3px 0 #014296;
+}
+
+.form{
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+}
+
+.input__search {
+    font-family: "WeatherLight";
+    color: #343642;
+    width: 15vw;
+    font-size: 1.5rem;
+    padding: 10px 5px 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 5px 5px 5px black;
+}
+
+.button {
+    font-size: 1.5rem;
+    width: 10vw;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.card {
+    display: none;
+    margin: 50px;
+    width: 40%;
+    padding: 10px 25px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    border-width: 10px;
+    border-color: #979C9C;
+    box-shadow: 5px 10px 10px black;
+}
+
+.card__content01 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.card__content02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city {
+    font-size: 6vw;
+    margin: 10px 0px;
+    color: #000000;
+}
+
+.country {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.temperatures {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.feels__like {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.temp__min {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.temp__max {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.humidity {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.wind__speed {
+    font-size: 2vw;
+    margin: 5px 0px;
+    color: #000000;
+}
+
+.Weather__Main {
+    font-size: 4vw;
+    color: #000000;
+}
+
+.Weather__Description {
+    font-size: 1.5vw;
+    margin: 0px 0px 15px 0px;
+    color: #000000;
+}
