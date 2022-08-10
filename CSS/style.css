@@ -47,7 +47,7 @@ footer {
 
 .title {
     margin: 10px;
-    font-size: 10rem;
+    font-size: 10vw;
     text-shadow: 
     -1px 1px 0 #014296,
     -2px 2px 0 #014296,
@@ -59,7 +59,7 @@ footer {
 }
 
 .subtitle {
-    font-size: 3rem;
+    font-size: 4vw;
     text-shadow: 
     -1px 1px 0 #014296,
     -2px 2px 0 #014296,
@@ -75,8 +75,9 @@ footer {
 .input__search {
     font-family: "WeatherLight";
     color: #343642;
-    width: 15vw;
-    font-size: 1.5rem;
+    height: 10%;
+    width: 60%;
+    font-size: 2.5vw;
     padding: 10px 5px 10px 10px;
     border-radius: 10px;
     outline: none;
@@ -84,18 +85,17 @@ footer {
 }
 
 .button {
-    font-size: 1.5rem;
-    width: 10vw;
-    padding: 5px;
+    width: 50%;
+    font-size: 2.5vw;
     border-radius: 10px;
     box-shadow: 5px 5px 5px black;
 }
 
 .card {
     display: none;
-    margin: 50px;
+    margin: 5%;
     width: 40%;
-    padding: 10px 25px;
+    padding: 2.5% 2.5%;
     background-color: #FFFFFF;
     border-radius: 10px;
     border-width: 10px;
@@ -124,43 +124,43 @@ footer {
 }
 
 .country {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
 
 .temperatures {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
 
 .feels__like {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
 
 .temp__min {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
 
 .temp__max {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
 
 .humidity {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
 
 .wind__speed {
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin: 5px 0px;
     color: #000000;
 }
@@ -173,5 +173,11 @@ footer {
 .Weather__Description {
     font-size: 1.5vw;
     margin: 0px 0px 15px 0px;
+    color: #000000;
+}
+
+.time {
+    font-size: 1.5vw;
+    margin: 5% 2.5%;
     color: #000000;
 }

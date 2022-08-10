@@ -8,12 +8,20 @@ const cityHumidity = document.querySelector(".humidity");
 const cityWindSpeed = document.querySelector(".wind__speed");
 const weatherMain = document.querySelector(".Weather__Main");
 const weatherDescription = document.querySelector(".Weather__Description");
+const time = document.querySelector(".time");
 
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
 const card = document.querySelector('.card');
 
 const APIkey = "0d1a8f142d6453871776f910261cc0f7";
+
+let timeNow = new Date();
+let dia = timeNow.getDate();
+let mes = (timeNow.getMonth() + 1);
+let ano = timeNow.getFullYear();
+let horas = timeNow.getHours();
+let minutos = timeNow.getMinutes();
 
 const fetchWeather = async (city) => {
     const APIResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIkey}`);
@@ -35,6 +43,7 @@ const renderWeather = async (city) => {
     cityWindSpeed.innerHTML = "";
     weatherMain.innerHTML = "";
     weatherDescription.innerHTML = "";
+    time.innerHTML = "";
 
     const data = await fetchWeather(city);
 
@@ -50,6 +59,7 @@ const renderWeather = async (city) => {
         cityWindSpeed.innerHTML = `Wind Speed: ${data.wind.speed} km/h`;
         weatherMain.innerHTML = `${data.weather[0].main}`;
         weatherDescription.innerHTML = `${data.weather[0].description}`;
+        time.innerHTML = `Updated at: ${dia}/${mes}/${ano} - ${horas}:${minutos}h`
     } else {
         card.style.display = "block"
         card.style.alignItems = "center"
@@ -63,6 +73,7 @@ const renderWeather = async (city) => {
         cityWindSpeed.innerHTML = "";
         weatherMain.innerHTML = "";
         weatherDescription.innerHTML = "";
+        time.innerHTML = "";
     }
 }
 
