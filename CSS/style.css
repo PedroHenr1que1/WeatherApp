@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    color: #348899;
+    color: #ff1e42;
     font-family: "Weather";
 }
 
@@ -22,7 +22,7 @@
 }
 
 body {
-    background-color: #343642;
+    background-color: #0a1f44;
 }
 
 header {
@@ -47,21 +47,21 @@ footer {
     margin: 10px;
     font-size: 10vw;
     text-shadow: 
-    -0.2vw 0.01vw 0 #014296,
-    -0.2vw 0.02vw 0 #014296,
-    -0.2vw 0.03vw 0 #014296,
-    -0.2vw 0.04vw 0 #014296,
-    -0.2vw 0.05vw 0 #014296,
-    -0.2vw 0.06vw 0 #014296,
-    -0.2vw 0.07vw 0 #014296;
+    -0.2vw 0.01vw 0 #000000,
+    -0.2vw 0.02vw 0 #000000,
+    -0.2vw 0.03vw 0 #000000,
+    -0.2vw 0.04vw 0 #000000,
+    -0.2vw 0.05vw 0 #000000,
+    -0.2vw 0.06vw 0 #000000,
+    -0.2vw 0.07vw 0 #000000;
 }
 
 .subtitle {
     font-size: 4vw;
     text-shadow: 
-    -0.2vw 0.01vw 0 #014296,
-    -0.2vw 0.02vw 0 #014296,
-    -0.2vw 0.03vw 0 #014296;
+    -0.2vw 0.01vw 0 #000000,
+    -0.2vw 0.02vw 0 #000000,
+    -0.2vw 0.03vw 0 #000000;
 }
 
 .form{
@@ -72,18 +72,23 @@ footer {
 
 .input__search {
     font-family: "WeatherLight";
-    color: #343642;
+    color: #0a1f44;
     height: 10%;
     width: 60%;
     font-size: 2.5vw;
-    padding: 10px 5px 10px 10px;
     border-radius: 10px;
-    outline: none;
     box-shadow: 5px 5px 5px black;
+    padding: 10px;
+}
+
+.input__search::placeholder{
+    color: #0a1f44;
 }
 
 .button {
-    color: #343642;
+    color: #0a1f44;
+    background-color: #ff1e42;
+    border: none;
     width: 50%;
     font-size: 2.5vw;
     border-radius: 10px;
@@ -116,16 +121,26 @@ footer {
     align-items: center;
 }
 
+.card__icon {
+    border-radius:  10px;
+    background-color: #0a1f444d;
+    margin: 2%;
+}
+
 .city {
     font-size: 6vw;
     margin: 10px 0px;
-    color: #000000;
+    color: #ff1e42;
+    text-shadow: 
+    -0.2vw 0.01vw 0 #000000,
+    -0.2vw 0.02vw 0 #000000,
+    -0.2vw 0.03vw 0 #000000;
 }
 
 .country {
     font-size: 2.5vw;
     margin: 5px 0px;
-    color: #000000;
+    color: #0a1f44;
 }
 
 .temperatures {
@@ -178,5 +193,5 @@ footer {
 .time {
     font-size: 1.5vw;
     margin: 5% 2.5%;
-    color: #000000;
+    color: #ff1e42;
 }

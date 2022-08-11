@@ -13,6 +13,7 @@ const time = document.querySelector(".time");
 const form = document.querySelector('.form');
 const input = document.querySelector('.input__search');
 const card = document.querySelector('.card');
+const weather = document.querySelector('.weather__icon')
 
 const APIkey = "0d1a8f142d6453871776f910261cc0f7";
 
@@ -28,6 +29,7 @@ const fetchWeather = async (city) => {
   
     if (APIResponse.status === 200) {
       const data = await APIResponse.json();
+      console.log(data)
       return data;
     }
 }
@@ -44,6 +46,7 @@ const renderWeather = async (city) => {
     weatherMain.innerHTML = "";
     weatherDescription.innerHTML = "";
     time.innerHTML = "";
+    weather.src = ""
 
     const data = await fetchWeather(city);
 
@@ -60,6 +63,7 @@ const renderWeather = async (city) => {
         weatherMain.innerHTML = `${data.weather[0].main}`;
         weatherDescription.innerHTML = `${data.weather[0].description}`;
         time.innerHTML = `Updated at: ${dia}/${mes}/${ano} - ${horas}:${minutos}h`
+        weather.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
     } else {
         card.style.display = "block"
         card.style.alignItems = "center"
@@ -74,6 +78,7 @@ const renderWeather = async (city) => {
         weatherMain.innerHTML = "";
         weatherDescription.innerHTML = "";
         time.innerHTML = "";
+        weather.src = ""
     }
 }
 
