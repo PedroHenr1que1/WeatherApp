@@ -78,7 +78,7 @@ const renderWeather = async (city) => {
         weatherMain.innerHTML = "";
         weatherDescription.innerHTML = "";
         time.innerHTML = "";
-        weather.src = ""
+        weather.style.display = "none"
     }
 }
 
